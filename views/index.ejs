@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List Of Companies</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Wrestling Wresults</h1>
+    <a href="/companies/new">Add wrestling company</a>
+    
+    <ul>
+      <% allCompanies.forEach((el) => { %>
+      <a href="/companies/<%= el._id %>">
+          <li><%= el.name %> </li>
+        </a>
+     <% }) %>
+    </ul>
+    
+    
+  </body>
+</html>
